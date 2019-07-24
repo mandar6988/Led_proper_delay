@@ -25,6 +25,6 @@ In addition to this three more file are added:
 main_led1.c
 main_led_4.c
 main_led_8.c
-These three file contins embedded c code to interface single led to pin 10,four led to pin 10-13,eigth led to pin 10-17.
+These three file contins embedded c code to interface single led to pin 16,four led to pin 16-19,eigth led to pin 16-23.
 All these files having delay of 1 second.Means these leds will on and off after 1second.
 
