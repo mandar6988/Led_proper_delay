@@ -1,5 +1,5 @@
 #include <LPC21xx.H> 
-# define led 0xFF<<16
+# define led 0xFF<<16// 8 pins are connected to port 0.16-0.23
 void pll_init()
 {
  PLLCON = 0x01;  
