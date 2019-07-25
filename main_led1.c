@@ -1,6 +1,6 @@
 #include <LPC21xx.H> 
-# define led 1<<16
-void pll_init()
+# define led 1<<16 // Led is connected to P0.16 
+void pll_init()// PLL initialisation
 {
  PLLCON = 0x01;  
  PLLCFG = 0x24;  
@@ -14,13 +14,13 @@ void pll_init()
  PLLFEED = 0x55;
  VPBDIV = 0x01; 
 }
-void timer0_init(void)
+void timer0_init(void)// timer0 initialisation
 {
     T0TCR = 0x00;  
     T0PR = 59999;        
     T0TCR = 0x02;   
 }
-void delay(unsigned int counts) //Using Timer0
+void delay(unsigned int counts) //creating delay with timer 
 {
     T0TCR = 0x02;       
     T0TCR = 0x01;       
