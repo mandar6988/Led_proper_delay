@@ -1,5 +1,5 @@
 #include <LPC21xx.H> 
-# define led 0xF<<16
+# define led 0xF<<16// 4 Led's are connected to pin 0.16 to 0.19
 void pll_init()
 {
  PLLCON = 0x01;  
